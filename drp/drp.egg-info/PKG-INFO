@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: drp
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides: d
+Provides: r
+Provides: p
+Requires-Python: ~=3.7

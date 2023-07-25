@@ -1,0 +1,3 @@
+[console_scripts]
+mosaic = drp.mosaic_deimos:main
+

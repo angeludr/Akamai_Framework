@@ -1,4 +1,15 @@
-event_table = {
+from keckdrpframework.pipelines.base_pipeline import BasePipeline
+from keckdrpframework.models.processing_context import ProcessingContext
+
+
+class Akamai_Pipeline(BasePipeline):
+    """
+    Pipeline to process KCWI data
+
+    """
+    name = 'AKAMAI-DRP'
+
+    event_table = {
     # Opens file
     "open_fits_file":                 ("OpenFits",
                                        "opening_fits_file",
@@ -58,3 +69,10 @@ event_table = {
                                        "creating_full_detector_mosaic",
                                        None),
 }
+
+    def __init__(self, context: ProcessingContext):
+        """
+        Constructor
+        """
+        BasePipeline.__init__(self, context)
+        self.cnt = 0
